@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mysql-app
+  name: kubesimplify
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mysql-app
+      app: kubesimplify
   template:
     metadata:
       labels:
-        app: mysql-app
+        app: kubesimplify
     spec:
       containers:
       - name: mysql
